@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Accordion?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.SplitPane?>
+<?import javafx.scene.control.TitledPane?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane id="AnchorPane" prefHeight="500.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="admin.Page1Controller">
+   <children>
+      <Label layoutY="-24.0" prefHeight="44.0" prefWidth="800.0" text="Student Attendance Maanagement System" AnchorPane.topAnchor="0.0" />
+      <SplitPane dividerPositions="0.19674185463659147" layoutX="1.0" layoutY="43.0" prefHeight="248.0" prefWidth="300.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="43.0">
+        <items>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0">
+               <children>
+                  <Accordion layoutY="1.0" prefHeight="455.0" prefWidth="154.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                    <panes>
+                        <TitledPane animated="false" prefHeight="388.0" prefWidth="154.0" text=" UPDATE">
+                          <content>
+                            <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="352.0" prefWidth="152.0" style="-fx-background-color: green;">
+                                 <children>
+                                    <ListView fx:id="listview_2" layoutX="19.6" layoutY="19.6" prefHeight="119.0" prefWidth="134.0" AnchorPane.bottomAnchor="275.0" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="8.0" AnchorPane.topAnchor="10.0" />
+                                 </children>
+                              </AnchorPane>
+                          </content>
+                        </TitledPane>
+                      <TitledPane animated="false" prefHeight="387.0" prefWidth="154.0" style="-fx-background-color: yellow;" text="MENU">
+                        <content>
+                          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" style="-fx-background-color: green;">
+                                 <children>
+                                    <ListView fx:id="listview" layoutX="11.0" layoutY="14.0" prefHeight="246.0" prefWidth="130.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+                                 </children>
+                              </AnchorPane>
+                        </content>
+                      </TitledPane>
+                    </panes>
+                  </Accordion>
+               </children>
+            </AnchorPane>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="432.0" prefWidth="616.0" style="-fx-background-color: violet;" />
+        </items>
+      </SplitPane>
+   </children>
+</AnchorPane>
